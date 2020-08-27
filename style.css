@@ -1,0 +1,84 @@
+::-moz-selection {
+	background: #FF4545;
+	color: #fff;
+}
+::selection {
+	background: #FF4545;
+	color: #fff;
+}
+.divnav {
+	background-color: #1bb8c6;
+	box-shadow: 0px 10px 30px 0.5px #4B4B4B;
+}
+.navopciones:hover {
+	background: #15A8B5;
+	border-radius: 7px;
+}
+.slider {
+	background: url('imagenes/fondo_principal.jpg');
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+.fondotitulo {
+	background-color: rgba(255,255,255,0.7);
+	width: 500px;
+}
+.fondotitulo {
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+.firsttitle {
+	font-size: 30px;
+	font-family: Coming soon;
+}
+.maintitle {
+	font-family: Crafty girls;
+	font-size: 80px;
+}
+.secondtitle {
+	font-size: 30px;
+	font-family: Coming soon;
+}
+.welcomediv {
+	font-size: 30px;
+	color: #3a73a9;
+	line-height: 25px;
+	font-weight: lighter;
+}
+.divsection2, .divsection4, .footer {
+	background-color: #1bb8c6;
+}
+.principal {
+	transform: rotate(-10deg);
+}
+.icon:hover {
+	background: #15A8B5;
+	border-radius: 20px;
+}

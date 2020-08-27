@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Whim</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/813b2986c9.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Crafty+Girls&family=Euphoria+Script&family=Finger+Paint&family=Fredericka+the+Great&family=Handlee&family=Niconne&family=Petit+Formal+Script&family=Rouge+Script&family=Sacramento&family=Syncopate&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="imagenes/sinsombra_logo_expo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- navbar -->
+	<div class="cotainer-fluid divnav fixed-top">
+		<nav class="navbar navbar-expand-md navbar-toggleable-md container">
+			<a class="navbar-brand text-white" href="index.html">
+				<img src="imagenes/mini_logo_expo.png" height="45px" class="d-inline-block">
+				Whim
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false" aria-label="Toggle navigation">
+    			<i class="fa fa-bars text-white"></i>
+  			</button>
+
+			<div class="collapse navbar-collapse" id="navcollapse">
+			<div class="navbar-nav ml-auto text-center">
+				<a class="nav-item nav-link text-white navopciones p-3" href="#aboutus">Acerca de nosotros</a>
+				<a class="nav-item nav-link text-white navopciones p-3" href="#section1">Misión & Visión</a>
+				<a class="nav-item nav-link text-white navopciones p-3" href="#ourproduct">Nuestro producto</a>
+				<a class="nav-item nav-link text-white navopciones p-3" href="#ourprocess">Nuestro proceso</a>
+				<!-- <a class="nav-item nav-link text-white navopciones p-3" href="extra.html">Blog</a> -->
+			</div>
+			</div>
+		</nav>
+	</div>
+	<!-- navbar -->
+
+	<!-- slider -->
+	<div class="container-fluid slider">
+		<div class="container d-flex align-items-center justify-content-center h-100">
+			<div class="container d-flex align-items-center flex-column justify-content-center h-50 fondotitulo rounded-circle p-5">
+				<p class="mb-1 firsttitle">Reposteria</p>
+				<p class=" mb-0 maintitle">Whim</p>
+				<p class="text-center mt-0 secondtitle">Desserts to your mouth</p>
+			</div>
+		</div>
+	</div>
+	<!-- slider -->
+
+	<!-- Welcome -->
+	<div class="container-fluid">
+		<div class="container my-5 text-center welcomediv">
+			<hr>
+			<hr>
+			<script type="text/javascript">
+				function welcome() {
+					var username = prompt('Introduce tu nombre por favor: ');
+
+					function printTime() {
+					    var d = new Date();
+					    var hours = d.getHours();
+					    var mins = d.getMinutes();
+					    //document.write(hours+":"+mins);
+
+					    if (hours<=11 && mins<=59){
+					        document.write('Buenos días ');
+					        document.write('<b>');
+					        document.write(username);
+					        document.write('</b>');
+					        document.write(', Bienvenid@');
+					    }
+					    else if (hours<=18 && mins<=59){
+					        document.write('Buenas tardes ');
+					        document.write('<b>');
+					        document.write(username);
+					        document.write('</b>');
+					        document.write(', Bienvenid@');
+					    }
+					    else if (hours>=19 && mins <=59){
+					        document.write('Buenas noches ');
+					        document.write('<b>');
+					        document.write(username);
+					        document.write('</b>');
+					        document.write(', Bienvenid@');
+						}
+
+						document.write('<br>');
+						document.write('<br>');
+						document.write('Conoce nuestra micro empresa...');
+					}
+					printTime();
+				}
+				welcome();
+			</script>
+			<hr>
+			<hr>
+		</div>
+	</div>
+	<!-- Welcome -->
+
+	<!-- Section1 -->
+	<div class="container-fluid p-3" id="aboutus">
+		<div class="mx-md-5 my-5">
+			<div class="row">
+				<div class="col-12 px-4 text-justify">
+					<h3 class="mb-4 display-4" style="color: #3a73a9">¿Cómo surgimos?</h3>
+					Nuestra empresa denominada <b>Whim</b> nace del deseo de emprender en uno de los mundos más dulces: <u>el negocio de los postres.</u> Partiendo desde el desarrollo de nuestro postre estrella llamado <b>Little Whim</b> del cual te contaremos más adelante. Inicialmente pasamos por muchas etapas desde la elección de nuestro producto hasta el nombre con el que queríamos ser reconocidos. Y como todo emprendimiento definitivamente hemos pasado por altos y bajos pero en este punto de nuestro negocio nos gusta describirnos como un equipo fuerte que ha aprendido a partir de la experiencia que se puede adquirir fuera de la zona de comfort.<br><br>
+				</div>
+				<div class="col-lg-7 px-4 text-justify">
+					 A pesar de ser una empresa que en crecimiento, estamos seguros de lo que queremos y claramente tenemos metas a largo plazo por los que nos mantenemos trabajando, dichos objetivos requieren de cierto tiempo y paciencia. Y bueno hasta el momento gracias a las habilidades y cualidades de quienes conformamos a <b>Whim</b> podemos asegurarte que mientras vamos creciendo también nos encargamos de ofrecer alegría e inspiración a quienes se dan la oportunidad de conocer acerca de nosotros.<br><b>Whim</b> no solo se trata de la calidad y excelencia de nuestros productos sino también del llamado a la acción para todos aquellos jóvenes, adultos o ancianos que aún tienen miedo de intentar ser exitosos en algo completamente diferente. Nos consideramos una fuente de aliento en el arte de la repostería moderna, prometemos encantarte si te quedas a saber más de nosotros.<br><br>
+				</div>
+				<div class="col-lg-5 text-center py-1 container d-flex align-items-center">
+					<img src="imagenes/section1.jpeg" class="w-100">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Section1 -->
+
+	<!-- Section2 -->
+	<div class="container-fluid d-flex py-5 divsection2 my-0" id="section1">
+		<div class="container align-content-center">
+			<div class="row">
+				<div class="col-md-6 my-5">
+					<div class="card text-center h-100 w-100">
+						<h3 class="card-title" style="color: #3a73a9">
+							<i class="fas fa-feather-alt mr-2" style="color: #3a73a9"></i>Misión
+						</h3>
+						<p class="card-tex">Ofrecer a las personas un delicioso postre hecho con pasion, para cumplir con el capricho de saborear algo dulce, con el objetivo de crear satisfacción con cada mordida.</p>
+					</div>
+				</div>
+				<div class="col-md-6 my-5">
+					<div class="card text-center h-100 w-100">
+						<h3 class="card-title" style="color: #3a73a9">
+							<i class="fas fa-feather-alt mr-2" style="color: #3a73a9"></i>Visión
+						</h3>
+						<p class="card-tex">Ser una reposteria que cumpla con los gustos de cada comprador, llevandose una sonrisa y un deseo de comprar mas.</p>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Section2 -->
+
+	<!-- Logo -->
+	<div class="container-fluid py-3" id="ourlogo">
+		<div class="container d-flex justify-content-center align-items-center text-lg-left text-justify py-5">
+			<div class="row">
+				<div class="col-xl-6 mr-auto ml-auto align-middle d-flex align-items-center">
+					<img src="imagenes/logo_principal.jpeg" class="img-fluid principal mr-auto ml-auto logo" width="450px">
+				</div>
+				<div class="col-xl-6 mr-sm-auto ml-sm-auto">
+					<p class="display-4" style="color: #3a73a9">Logo</p>
+					<p>Pero <b>¿qué hay de nuestro logo?</b> pues déjanos contarte que es una historia bastante curiosa. Cómo toda empresa hicimos muchos bocetos antes de crear lo que nos imaginamos desde un principio, pero lo que pocos saben es que siempre apuntamos hacia una combinación de simplicidad con profesionalismo que reflejara la autenticidad de nuestra marca. Luego de probar varios diseños llegamos a lo que hoy en día representa a Whim.<br><br>
+					De hecho en un principio ni siquiera pensamos en incluir una fresa en nuestro logo, más bien pensábamos usar otros íconos totalmente diferentes. Y bueno, al analizar la información más detalladamente comprendimos que este elemento era esencial debido a la deliciosa composición de la que nuestro postre estrella está hecho. Y tal vez también te preguntas de <b>¿dónde surgió nuestro distintivo nombre?</b><br><br>
+					Bueno la historia es mucho más increíble que la anterior, puesto que desde un principio nos basamos en nuestros clientes. Y sabemos que lo que buscan es poder saborear un pequeño y delicioso <b>capricho</b> que los ayude a escapar de su rutina de vez en cuando. Así fue como surgió <b>Whim</b> el cual es la traducción de capricho en el idioma inglés. Y luego de algunos buenos y malo intentos logramos capturar  la esencia de nuestra empresa y toda la dulzura que nos caracteriza en una imagen única que lleva en alto nuestro nombre.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Logo -->
+
+	<!-- Section3 -->
+	<div class="container-fluid py-5" id="ourproduct" style="background-color: #F4F4F4">
+		<div class="container d-flex justify-content-center align-items-center text-lg-right text-justify py-3">
+			<div class="row">
+				<div class="col-xl-6 mr-sm-auto ml-sm-auto">
+					<h2 class="display-4" style="color: #3a73a9">Vasito de Yogurt</h2>
+					<p><b>Su precio dependera del topping que se le agregue</b></p>
+					<p>Como ya lo habrás notado está hecho a base de gelatina y Yogurt como su nombre lo indica, inicialmente nos hemos apoyado en las combinaciones que la fresa nos puede ofrecer a nivel de sabor, estructura y presentación. Puede que no te parezca la gran ciencia para ser llamado un postre pero déjanos decirte que la explosión de sabores es impresionante. Basta con que dejes que te sorprenda.<br>
+					Nuestro producto llamado <b>Little Whim</b> (puesto que lo consideramos un pequeño capricho para tu paladar) consta de tres capas sabrosas de distintos gustos. Empezamos con una capa suave de gelatina de fresa tradicional a la que le sigue nuestra fabulosa capa de grenetina combinada con un delicioso yogurt de fresa que termina siendo de una tonalidad rosa muy agradable, para por último cerrar con nuestra capa blanca que es una mezcla de grenetina con leche condensada decorada con el topping de tu preferencia.</p>
+					<p>$0.55</p>
+				</div>
+				<div class="col-xl-6 mr-auto ml-auto align-middle d-flex align-items-center">
+					<img src="imagenes/prototipo.jpeg" class="img-fluid principal mr-auto ml-auto" width="400px">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Section3 -->
+
+	<!-- Section4 -->
+	<div class="container-fluid py-5 mr-auto ml-auto divsection4">
+		<div class="container">
+			<p align='center' class="text-white h3">Dos estilos diferentes...</p>
+			<div class="row">
+
+				<!-- price1 -->
+				<div class="col-lg-6 col-md-12 my-5 d-flex justify-content-center">
+					<div class="card text-center w-75 w-75">
+						<img src="imagenes/gomitas.jpg" class="card-img">
+						<div class="card-img-overlay mt-sm-0 mt-md-5">
+							<div class="container-fuid d-flex align-items-center flex-column w-100 mt-md-5 mt-lg-0 h-50" style="background-color: rgba(255,255,255,0.5);">
+								<div>
+									<span class="display-3">$0.60</span>
+								</div>
+								<h4 class="card-title">Gomitas</h4>
+							</div>
+						</div>
+						<p class="card-footer bg-white">Un topping que puedes agregar en nuestro postre, para que sea más sabroso.</p>
+						<!-- <div class="card-footer text-muted bg-white">
+							Inexistente aún
+						</div> -->
+					</div>
+				</div>
+				<!-- price1 -->
+
+				<!-- price2 -->
+				<div class="col-lg-6 col-md-12 my-5 d-flex justify-content-center">
+					<div class="card text-center w-75">
+						<img src="imagenes/prototipo.jpeg" class="card-img">
+						<div class="card-img-overlay mt-sm-0 mt-md-5">
+							<div class="container-fluid d-flex flex-column align-items-center w-100 mt-md-5 mt-lg-0 h-50" style="background-color: rgba(255,255,255,0.5);">
+								<div>
+									<span class="display-3">$0.55</span>
+								</div>
+								<h4 class="card-title">Clásico</h4>
+							</div>
+						</div>
+						<p class="card-footer">Nuestro postre clásico sin topping, pero ¡Hey! sigue siendo delicioso.</p>
+						<!-- <div class="card-footer text-muted bg-white">
+							Disponible
+						</div> -->
+					</div>
+				</div>
+				<!-- price2 -->
+
+			</div>
+		</div>
+	</div>
+	<!-- Section4 -->
+
+	<!-- Video -->
+	<div class="container-fluid d-flex align-items-center justify-content-center" id="ourprocess">
+		<div class="container embed-responsive embed-responsive-16by9">
+			<video class="embed-responsive-item h-100" src="productprocess.mp4" controls></video>
+		</div>
+	</div>
+	<!-- Video -->
+
+	<!-- Section5 -->
+	<div class="container-fluid py-5" style="background-color: #F4F4F4">
+		<div class="container">
+			<div class="row">
+
+				<!-- Member1 -->
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+					<div class="card text-center h-100 w-75">
+						<img src="imagenes/andre.jpeg" class="card-img"></i>
+						<div class="card-footer text-muted h-100">
+							¡Hola! Soy Andrea Velasco, una de los miembros de este asombroso equipo. Estoy a cargo de diseñar toda nuestra publicidad, etc; si, yo soy la Diseñadora.
+						</div>
+					</div>
+				</div>
+				<!-- Member1 -->
+
+				<!-- Member2 -->
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+					<div class="card text-center h-100 w-75">
+						<img src="imagenes/nath.jpeg" class="card-img">
+						<div class="card-footer text-muted h-100">
+							¡Hola! Soy Nathaly Aguírre, una de los miembros de este asombroso equipo. Estoy a cargo de contabilizar todos nuestros ingresos, etc; si, yo soy la Contadora.
+						</div>
+					</div>
+				</div>
+				<!-- Member2 -->
+
+				<!-- Member3 -->
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+					<div class="card text-center h-100 w-75">
+						<img src="imagenes/bryan.jpeg" class="card-img">
+						<div class="card-footer text-muted h-100 align-middle">
+							¡Hola! Soy Bryan Martínez, uno de los miembros de este asombroso equipo. Estoy a cargo de hacer nuestro producto; si, yo soy el Chef.
+						</div>
+					</div>
+				</div>
+				<!-- Member3 -->
+
+				<!-- Member4 -->
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+					<div class="card text-center h-100 w-75">
+						<img src="imagenes/missfatima.jpeg" class="card-img">
+						<div class="card-footer text-muted h-100 align-middle">
+							Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis nihil delectus, quam provident facere.
+						</div>
+					</div>
+				</div>
+				<!-- Member4 -->
+
+			</div>
+		</div>
+	</div>
+	<!-- <div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="card ">
+			  		<img src="" class="card-img-top" alt="Integrante">
+			  		<div class="card-body">
+			    		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ea, enim dignissimos ducimus eum temporibus dolorum cumque unde explicabo quis.</p>
+			  		</div>
+				</div>
+				<div class="card">
+			  		<img src="" class="card-img-top" alt="Integrante">
+			  		<div class="card-body">
+			    		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ea, enim dignissimos ducimus eum temporibus dolorum cumque unde explicabo quis.</p>
+			  		</div>
+				</div>
+				<div class="card">
+			  		<img src="" class="card-img-top" alt="Integrante">
+			  		<div class="card-body">
+			    		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ea, enim dignissimos ducimus eum temporibus dolorum cumque unde explicabo quis.</p>
+			  		</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- Section5 -->
+
+	<!-- Footer -->
+	<footer class="container-fluid py-3 footer">
+		<div class="row">
+			<div class="col-6 d-flex justify-content-center">
+				<a href="https://www.instagram.com/whiim_/" target='blanc_' class="text-white display-4 p-3 px-4 icon"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="col-6 d-flex justify-content-center">
+				<a href="https://www.superate.org.sv/" class="text-white display-4 p-3 icon" target="https://www.superate.org.sv/"><i class="fas fa-handshake"></i></a>
+			</div>
+			<div class="col-6 h5 text-white text-center d-flex justify-content-center">
+				Nuestro Instagram
+			</div>
+			<div class="col-6 h5 text-white d-flex justify-content-center">
+				Patrocinadores
+			</div>
+			<div class="col-12 pt-3 text-center text-white">
+				©Copyright 2020 EXPO-equipo1
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
