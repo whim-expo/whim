@@ -25,8 +25,12 @@
 	width: 500px;
 }
 .fondotitulo {
-	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
+	animation: inicio 1.5s 0.5s ease-in-out;
+	-webkit-animation: inicio 1.5s 0.5s ease-in-out;
+}
+/*.fondotitulo {
+	animation: fadeIn;
+	-webkit-animation: fadeIn;	
 
 	animation-duration: 1.5s;	
 	-webkit-animation-duration: 1.5s;
@@ -35,15 +39,15 @@
 	-webkit-animation-timing-function: ease-in-out;		
 
 	visibility: visible !important;	
-}
+}*/
 
-@keyframes fadeIn {
+@keyframes inicio {
 	0% {
 		transform: scale(0);
 		opacity: 0.0;		
 	}
 	60% {
-		transform: scale(1.1);	
+		transform: scale(1.2);	
 	}
 	80% {
 		transform: scale(0.9);
@@ -76,9 +80,45 @@
 	background-color: #1bb8c6;
 }
 .principal {
-	transform: rotate(-10deg);
+	border-radius: px;
 }
 .icon:hover {
 	background: #15A8B5;
 	border-radius: 20px;
+}
+.animado {
+	opacity: 0;
+	transition: all 0.5s;
+}
+.animacion {
+	animation: animacion 1s;
+}
+
+@keyframes animacion{
+	0% {
+		transform: translateX(62%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.animado2 {
+	opacity: 0;
+	transition: all 0.5s;
+}
+.animacion2 {
+	animation: animacion2 1s;
+}
+
+@keyframes animacion2{
+	0% {
+		transform: translateX(-62%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
