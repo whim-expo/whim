@@ -28,7 +28,6 @@
 				<a class="nav-item nav-link text-white navopciones p-3" href="#section1">Misión & Visión</a>
 				<a class="nav-item nav-link text-white navopciones p-3" href="#ourproduct">Nuestro producto</a>
 				<a class="nav-item nav-link text-white navopciones p-3" href="#ourprocess">Nuestro proceso</a>
-				<!-- <a class="nav-item nav-link text-white navopciones p-3" href="extra.html">Blog</a> -->
 			</div>
 			</div>
 		</nav>
@@ -181,51 +180,42 @@
 
 	<!-- Section4 -->
 	<div class="container-fluid py-5 mr-auto ml-auto divsection4">
-		<div class="container">
-			<p align='center' class="text-white h3">Dos estilos diferentes...</p>
-			<div class="row">
+		<div class="container" id="galeria">
+			<div class="text-center display-4 mt-3 mb-5 text-white">
+				Galería de Imágenes
+			</div>
+			
+			<div class="card-columns d-flex justify-content-center row galeria2" id="galeria2">
 
-				<!-- price1 -->
-				<div class="col-lg-6 col-md-12 my-5 d-flex justify-content-center">
-					<div class="card text-center w-75 w-75">
-						<img src="imagenes/gomitas.jpg" class="card-img">
-						<div class="card-img-overlay mt-sm-0 mt-md-5">
-							<div class="container-fuid d-flex align-items-center flex-column w-100 mt-md-5 mt-lg-0 h-50" style="background-color: rgba(255,255,255,0.5);">
-								<div>
-									<span class="display-3">$0.60</span>
-								</div>
-								<h4 class="card-title">Gomitas</h4>
+				<script type="text/javascript">
+					var imagenes = [1,2,3,4,5];
+					var galeria = document.getElementById('galeria2');
+
+					for (imagen of imagenes){
+						galeria.innerHTML += `
+						<div class="card h-50 col-3" style="padding: 0px; border: 0px;">
+							<a href="#" data-toggle="modal" data-target="#id${imagen}">
+								<img src="imagenes/${imagen}.jpeg" alt="Imágen postre" class="card-img-top rounded">
+							</a>
+						</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<button type="button" class="close mr-4 mt-4" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<div class="modal-dialog modal-md modal-dialog-centered" role="document">
+								<img src="imagenes/${imagen}.jpeg" class="img-fluid rounded"></img>
 							</div>
 						</div>
-						<p class="card-footer bg-white">Un topping que puedes agregar en nuestro postre, para que sea más sabroso.</p>
-						<!-- <div class="card-footer text-muted bg-white">
-							Inexistente aún
-						</div> -->
-					</div>
-				</div>
-				<!-- price1 -->
-
-				<!-- price2 -->
-				<div class="col-lg-6 col-md-12 my-5 d-flex justify-content-center">
-					<div class="card text-center w-75">
-						<img src="imagenes/prototipo.jpeg" class="card-img">
-						<div class="card-img-overlay mt-sm-0 mt-md-5">
-							<div class="container-fluid d-flex flex-column align-items-center w-100 mt-md-5 mt-lg-0 h-50" style="background-color: rgba(255,255,255,0.5);">
-								<div>
-									<span class="display-3">$0.55</span>
-								</div>
-								<h4 class="card-title">Clásico</h4>
-							</div>
-						</div>
-						<p class="card-footer">Nuestro postre clásico sin topping, pero ¡Hey! sigue siendo delicioso.</p>
-						<!-- <div class="card-footer text-muted bg-white">
-							Disponible
-						</div> -->
-					</div>
-				</div>
-				<!-- price2 -->
+						<!-- Modal -->
+						`
+					}
+				</script>
 
 			</div>
+
+
 		</div>
 	</div>
 	<!-- Section4 -->
@@ -245,7 +235,7 @@
 			<div class="row">
 
 				<!-- Member1 -->
-				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center member1">
 					<div class="card text-center h-100 w-75">
 						<img src="imagenes/andre.jpeg" class="card-img"></i>
 						<div class="card-footer text-muted h-100">
@@ -256,7 +246,7 @@
 				<!-- Member1 -->
 
 				<!-- Member2 -->
-				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center member2">
 					<div class="card text-center h-100 w-75">
 						<img src="imagenes/nath.jpeg" class="card-img">
 						<div class="card-footer text-muted h-100">
@@ -267,7 +257,7 @@
 				<!-- Member2 -->
 
 				<!-- Member3 -->
-				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center member3">
 					<div class="card text-center h-100 w-75">
 						<img src="imagenes/bryan.jpeg" class="card-img">
 						<div class="card-footer text-muted h-100 align-middle">
@@ -278,7 +268,7 @@
 				<!-- Member3 -->
 
 				<!-- Member4 -->
-				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center">
+				<div class="col-lg-3 col-md-8 my-5 mr-auto ml-auto d-flex justify-content-center member4">
 					<div class="card text-center h-100 w-75">
 						<img src="imagenes/missfatima.jpeg" class="card-img">
 						<div class="card-footer text-muted h-100 align-middle">
@@ -301,11 +291,21 @@
 			<div class="col-6 d-flex justify-content-center">
 				<a href="https://www.superate.org.sv/" class="text-white display-4 p-3 icon" target="https://www.superate.org.sv/"><i class="fas fa-handshake"></i></a>
 			</div>
+		</div>
+		<div class="row mb-3">
 			<div class="col-6 h5 text-white text-center d-flex justify-content-center">
 				Nuestro Instagram
 			</div>
 			<div class="col-6 h5 text-white d-flex justify-content-center">
 				Patrocinadores
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 h5 d-flex h-100 justify-content-center text-white text-center">
+				usuario.expo1@gmail.com
+			</div>
+			<div class="col-6 h5 d-flex h-100 justify-content-center text-white text-center">
+				+503 7001-0324
 			</div>
 			<div class="col-12 pt-3 text-center text-white">
 				©Copyright 2020 Whim
@@ -315,34 +315,7 @@
 	<!-- Footer -->
 
 	<!-- Animación de scroll -->
-	<script type="text/javascript">
-		var animado = document.querySelectorAll('.animado');
-		function detectScroll() {
-			var scrollTop = document.documentElement.scrollTop;
-			for (let i=0; i<animado.length; i++) {
-				let alturaPantalla = animado[i].offsetTop;
-				if(alturaPantalla - 400 < scrollTop) {
-					animado[i].style.opacity = 1;
-					animado[i].classList.add('animacion');
-				}
-			}
-		}
-
-		var animado2 = document.querySelectorAll('.animado2');
-		function detectScroll2() {
-			let scrollTop = document.documentElement.scrollTop;
-			for (var i=0; i<animado2.length; i++) {
-				let alturaPantalla = animado2[i].offsetTop;
-				if(alturaPantalla - 400 < scrollTop) {
-					animado2[i].style.opacity = 1;
-					animado2[i].classList.add('animacion2');
-				}
-			}
-		}
-
-		window.addEventListener('scroll', detectScroll);
-		window.addEventListener('scroll', detectScroll2);
-	</script>
+	<script src="main.js" type="text/javascript"></script>
 	<!-- Animación de scroll -->
 
 	<!-- JS, Popper.js, and jQuery -->
