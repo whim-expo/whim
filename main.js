@@ -34,18 +34,6 @@ function navbarScroll() {
 	}
 }
 
-var galeria = document.querySelectorAll('#galeria2');
-function galeriaScroll() {
-	let scrollTop = document.documentElement.scrollTop;
-	for (var i=0; i<galeria.length; i++) {
-		let alturaPantalla = galeria[i].offsetTop;
-		if(alturaPantalla - 300 < scrollTop) {
-			galeria[i].style.opacity = 1;
-			galeria[i].classList.add('galeriaslip');
-		}
-	}
-}
-
 var member1 = document.querySelectorAll('.member1');
 function member1Scroll() {
 	let scrollTop = document.documentElement.scrollTop;
@@ -97,7 +85,6 @@ function member4Scroll() {
 window.addEventListener('scroll', detectScroll);
 window.addEventListener('scroll', detectScroll2);
 window.addEventListener('scroll', navbarScroll);
-window.addEventListener('scroll', galeriaScroll);
 window.addEventListener('scroll', member1Scroll);
 window.addEventListener('scroll', member2Scroll);
 window.addEventListener('scroll', member3Scroll);
