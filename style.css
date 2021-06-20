@@ -29,7 +29,7 @@
 		rgba(255,255,255,0.7),
 		rgba(255,255,255,0.4)
 	);
-	border: 3px solid #fff;
+	border: 10px solid rgb(255,255,255);
 	width: 500px;
 }
 .fondotitulo {
