@@ -24,7 +24,11 @@
 	background-size: cover;
 }
 .fondotitulo {
-	background-color: rgba(255,255,255,0.7);
+	background: linear-gradient(
+		to right bottom,
+		rgba(255,255,255,0.7),
+		rgba(255,255,255,0.3)
+	);
 	width: 500px;
 }
 .fondotitulo {
